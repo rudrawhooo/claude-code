@@ -1,20 +1,30 @@
-# src
+# Claude Code 
 
-Community-maintained, TypeScript-based CLI codebase inspired by modern AI coding assistants.
+This repository is a community-maintained, open-source reconstruction effort around a TypeScript CLI codebase in the Claude Code ecosystem.
 
-This repository is intended to be fully open for community collaboration.
+## Why this exists
 
-## Project status
+In 2026, public reporting described an npm packaging incident that exposed source-map artifacts for Claude Code builds. This project exists to study architecture patterns, improve tooling quality in the open, and support collaborative learning.
 
-- Status: early open-source release
-- Focus: make the code easy to run, review, and improve in public
-- Contributions: welcome
+## Project goals
 
-## Important notice
+- Maintain a transparent, contributor-friendly codebase
+- Improve reliability, developer experience, and documentation
+- Enable public discussion of architecture and implementation tradeoffs
+- Build an active contributor community around open development
 
-This is an independent community project. It is not affiliated with, endorsed by, or maintained by Anthropic.
+## Legal and ethical boundaries
 
-Contributors must not add proprietary code, leaked assets, private prompts, or any content copied from closed-source products.
+This is an independent community project and is not affiliated with, endorsed by, or maintained by Anthropic.
+
+To keep this repository responsibly open-source:
+
+- Do not add proprietary, leaked, confidential, or private material
+- Do not submit copied closed-source code
+- Contribute only code/content you have rights to publish
+- Prefer clean-room implementations and public documentation references
+
+If a maintainer identifies questionable provenance, the change may be removed.
 
 ## Repository layout
 
@@ -29,44 +39,48 @@ Top-level areas include:
 
 ## Getting started
 
-The repository currently does not include a checked-in `package.json` or lockfile at root, so setup depends on how you plan to build/run the code.
+The repository currently does not include a root `package.json` or lockfile, so setup depends on your local build strategy.
 
 Suggested bootstrap flow:
 
 1. Install prerequisites:
    - Node.js 18+
-   - Bun (optional, but some imports reference Bun features)
+   - Bun (some modules reference Bun features)
    - Git
 2. Clone and enter the repository.
-3. Add or restore your project manifest (`package.json`) and dependency lockfile if you maintain them separately.
-4. Install dependencies and run your preferred build/test workflow.
+3. Add or restore your project manifest and lockfile if you maintain them separately.
+4. Install dependencies and run your local build/test workflow.
 
 Example (adapt to your setup):
 
 ```bash
-# if you use npm
+# npm
 npm install
 npm run build
 npm test
 
-# or with bun
+# bun
 bun install
 bun test
 ```
 
-## Open-source workflow
+## Contributing
 
-1. Create a feature branch.
-2. Make focused changes with tests/docs.
-3. Open a pull request with clear rationale and validation steps.
-4. Address review feedback and keep commits clean.
+We welcome improvements to architecture, docs, tooling, quality, and tests.
+
+Before opening a PR:
+
+1. Create a focused branch.
+2. Make scoped changes with clear rationale.
+3. Include validation notes or tests.
+4. Update docs for user-facing behavior changes.
 
 See:
 
-- `CONTRIBUTING.md` for contribution rules
-- `CODE_OF_CONDUCT.md` for community standards
-- `SECURITY.md` for responsible disclosure
+- `CONTRIBUTING.md`
+- `CODE_OF_CONDUCT.md`
+- `SECURITY.md`
 
 ## License
 
-Licensed under the MIT License. See `LICENSE`.
+MIT License. See `LICENSE`.
